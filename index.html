@@ -1,0 +1,35 @@
+<!-- the user interface for inputting the date ranges and displaying the result -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Range Overlap Checker</title>
+    <!-- the styles and layout for the web page -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="main">
+      <h1>Date Range Overlap Checker</h1>
+        <label for="start1">User 1 Start date:</label>
+        <input type="date" id="start1">
+
+        <label for="end1">User 1 End Date:</label>
+        <input type="date" id="end1">
+
+        <label for="start2">User 2 Start date:</label>
+        <input type="date" id="start2">
+
+        <label for="end2">User 2 End Date:</label>
+        <input type="date" id="end2">
+
+        <br>
+    <div>
+      <button onclick="checkOverlap()">Check</button>
+      <p id="result"></p>
+    </div>
+    <!-- logic for checking the overlap of date ranges -->
+    <script src="script.js"></script> 
+  </div>
+</body>
+</html>
